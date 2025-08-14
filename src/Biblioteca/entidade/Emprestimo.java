@@ -1,14 +1,15 @@
 package Biblioteca.entidade;
 
+import java.sql.Timestamp;
 import java.time.LocalDateTime;
 
 public class Emprestimo {
     private long id;
     private String usuario;
     private long livroid;
-    private LocalDateTime dataDoEmprestimo;
-    private LocalDateTime dataPrevistaDeDevolucao;
-    private LocalDateTime dataEfetivaDeDevolucao;
+    private Timestamp dataDoEmprestimo;
+    private Timestamp dataPrevistaDeDevolucao;
+    private Timestamp dataEfetivaDeDevolucao;
 
     public long getId() {
         return id;
@@ -34,27 +35,27 @@ public class Emprestimo {
         this.livroid = livroid;
     }
 
-    public LocalDateTime getDataDoEmprestimo() {
+    public Timestamp getDataDoEmprestimo() {
         return dataDoEmprestimo;
     }
 
-    public void setDataDoEmprestimo(LocalDateTime dataDoEmprestimo) {
+    public void setDataDoEmprestimo(Timestamp dataDoEmprestimo) {
         this.dataDoEmprestimo = dataDoEmprestimo;
     }
 
-    public LocalDateTime getDataPrevistaDeDevolucao() {
+    public Timestamp getDataPrevistaDeDevolucao() {
         return dataPrevistaDeDevolucao;
     }
 
-    public void setDataPrevistaDeDevolucao(LocalDateTime dataPrevistaDeDevolucao) {
+    public void setDataPrevistaDeDevolucao(Timestamp dataPrevistaDeDevolucao) {
         this.dataPrevistaDeDevolucao = dataPrevistaDeDevolucao;
     }
 
-    public LocalDateTime getDataEfetivaDeDevolucao() {
+    public Timestamp getDataEfetivaDeDevolucao() {
         return dataEfetivaDeDevolucao;
     }
 
-    public void setDataEfetivaDeDevolucao(LocalDateTime dataEfetivaDeDevolucao) {
+    public void setDataEfetivaDeDevolucao(Timestamp dataEfetivaDeDevolucao) {
         this.dataEfetivaDeDevolucao = dataEfetivaDeDevolucao;
     }
 }
